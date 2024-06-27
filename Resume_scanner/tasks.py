@@ -19,7 +19,7 @@ def tasks(llm, job_desire, resume_content):
         description=f'Resume Content: {resume_content} \n Analyse the resume provided and the report of job_requirements_researcher to provide a detailed SWOT analysis report on the resume along with the Resume Match Percentage and Suggestions to improve',
         expected_output='A JSON formatted report as follows: "candidate": candidate, "strengths":[strengths], "weaknesses":[weaknesses], "opportunities":[opportunities], "threats":[threats], "resume_match_percentage": resume_match_percentage, "suggestions": "suggestions"',
         agent=resume_swot_analyser,
-        output_file='resume-report/resume_review.json'
+        #output_file='resume-report/resume_review.json'
     )
     return resume_swot_analysis
     #return research, resume_swot_analysis
